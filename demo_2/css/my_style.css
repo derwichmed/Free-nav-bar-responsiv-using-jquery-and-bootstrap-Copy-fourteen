@@ -1,0 +1,121 @@
+header{
+    padding-left: 10px;
+    padding-right: 10px
+}
+.nav_bar{
+    min-height: 40px;
+    background-image: linear-gradient(to bottom,#333333,black);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0px
+}
+.nav_home{
+    background-color: black;
+    width: 50px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 2px
+}
+.nav_home img{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin: auto;
+}
+.menu{
+    height: 100%;
+    list-style: none
+}
+.menu_item{
+    display: inline-block;
+    min-width: 120px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer
+}
+.menu_item:hover{
+    cursor: pointer;
+    background-color: black
+}
+.sub_menu_gabarie{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left
+}
+.sub_menu{
+    width: 100%;
+    background-color: #9191d9;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    display: none
+}
+.sub_menu_item{
+    display: inline-block;
+    min-width: 120px;
+    color: white;
+    padding-top: 7px;
+    cursor: pointer;
+    text-align: center
+}
+.sub_menu_item:hover{
+    background-color: #7979b5
+}
+.sub_menu_item strong:hover{
+    border-bottom: white 2px solid
+}
+.nav_bar > div > div > div:last-child img{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px
+}
+.nav_home img:nth-child(1){
+    display: none
+}
+@media(min-width: 500px){
+    .menu_item{
+        height: 100%;
+    }
+    .sub_menu_gabarie{
+        position: fixed;
+        left: 0;
+        top: 40px;
+    }
+    .sub_menu_item{
+        height: 100%;
+    }
+    .sub_menu{
+        height: 40px;
+    }
+}
+@media(max-width: 500px){
+    .nav_home img:nth-child(1){
+        display: inline-block;
+         
+    }
+    .menu{
+        position: fixed;
+        width: 80%;
+        height: 90%;
+        top: 50px;
+        background-image: linear-gradient(to bottom,#333333,black);
+        overflow-y: scroll;
+        display: none
+    }
+    .menu_item{
+        min-height: 50px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 10px
+    }
+    .menu{
+        padding: 0px
+    }
+    
+}
